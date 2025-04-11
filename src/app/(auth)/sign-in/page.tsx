@@ -22,7 +22,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
-const page = () => {
+const Page = () => {
     
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -124,4 +124,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

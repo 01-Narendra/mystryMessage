@@ -17,7 +17,7 @@ import React, { useCallback, useEffect, useState } from 'react'
 import { Controller, useForm } from 'react-hook-form'
 import { z } from 'zod'
 
-const page = () => {
+const Page = () => {
 
   const [messages, setMessages] = useState<Message[]>([])
   const [isLoading, setIsLoading] = useState(false)
@@ -188,4 +188,4 @@ const page = () => {
   );
 }
 
-export default page
+export default Page

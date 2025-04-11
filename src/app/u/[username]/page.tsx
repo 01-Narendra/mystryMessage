@@ -11,17 +11,17 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import axios, { AxiosError } from 'axios'
 import { Loader2 } from 'lucide-react'
 import { useParams } from 'next/navigation'
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
-const page = () => {
+const Page = () => {
 
   const param = useParams<{ username: string }>()
   const { toast } = useToast()
-  const [isSubmitting, setIsSubmitting] = React.useState(false)
-  const [isGenerating, setIsGenerating] = React.useState(false)
-  const [questions, setQuestions] = React.useState([""])
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isGenerating, setIsGenerating] = useState(false)
+  const [questions, setQuestions] = useState([""])
 
   const form = useForm<z.infer<typeof sendMessageSchema>>({
       resolver: zodResolver(sendMessageSchema),
@@ -132,4 +132,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
