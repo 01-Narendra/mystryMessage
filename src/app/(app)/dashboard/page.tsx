@@ -111,7 +111,7 @@ const Page = () => {
 
 
   const user:User = session?.user as User
-  const baseUrl = `${window.location.protocol}//${window.location.host}`
+  const baseUrl = `http:localhost:3000`
   const profileUrl = `${baseUrl}/u/${user?.username}`
 
   const copyToClipboard = () => {
