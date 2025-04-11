@@ -62,7 +62,7 @@ export default function Home() {
         </Carousel>
       </main>
 
-      <p className='md:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-gray-300 to-gray-500 text-3xl p-4 font-bold text-center mt-3'>Mystry Messages</p>
+      <p className='md:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-gray-300 to-gray-500 text-3xl select-none p-4 font-bold text-center mt-3'>Mystry Messages</p>
 
       {/* Footer */}
       <footer className="text-center p-4 md:p-6 bg-gray-500 text-gray-300">
