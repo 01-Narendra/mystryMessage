@@ -111,7 +111,7 @@ const Page = () => {
 
 
   const user:User = session?.user as User
-  const baseUrl = `http:localhost:3000`
+  const baseUrl = `https://mystry-message-tawny.vercel.app`
   const profileUrl = `${baseUrl}/u/${user?.username}`
 
   const copyToClipboard = () => {
