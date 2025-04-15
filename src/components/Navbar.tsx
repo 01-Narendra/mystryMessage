@@ -10,6 +10,7 @@ const Navbar = () => {
 
     const {data: session} = useSession()
     const user:User = session?.user as User
+    console.log("session inside navbar", session)
 
   return (
     <nav className='p-4 md:p-6 shadow-md'>
