@@ -122,7 +122,7 @@ const Page = () => {
     })
   }
 
-
+  console.log("Session", session)
   if(!session || !session.user) {
     return <div className='p-10 text-3xl font-bold text-center'>Please Login</div>
   }
